@@ -3,6 +3,7 @@ import { DEFAULT_MODEL, sunoApi } from "@/lib/SunoApi";
 import { corsHeaders } from "@/lib/utils";
 
 export const dynamic = "force-dynamic";
+export const maxDuration = 60; // allow longer timeout for wait_audio == true
 
 export async function POST(req: NextRequest) {
   if (req.method === 'POST') {
